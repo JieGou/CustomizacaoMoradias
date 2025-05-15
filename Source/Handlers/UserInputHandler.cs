@@ -39,7 +39,7 @@ namespace CustomizacaoMoradias.Source.Handlers
             HouseBuilder builder = new HouseBuilder(doc, levelName, topLevelName, scale);
 
             string errorMessage = "";
-            using (Transaction transaction = new Transaction(doc, "Contruir JSON"))
+            using (Transaction transaction = new Transaction(doc, "Build JSON"))
             {
                 transaction.Start();
                 try
